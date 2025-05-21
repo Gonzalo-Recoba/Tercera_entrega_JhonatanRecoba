@@ -1,0 +1,49 @@
+/*☺ _vars*/
+
+//Colores
+    $colorPrincipal:#63a3f8;
+    $colorSecundario: #183561;
+    $colorTerciario: #7ea8e6;
+    $btnhover: #3cadd9;
+    $bgColorMain: #caeffede;
+    $bgColorModal: #caeffe;
+    $white: #ffffff;
+    $black: #000000;
+
+
+$color:(
+    "principal":#63a3f8,
+    "secundario": #183561,
+    "terciario": #7ea8e6,
+    "hover": #3cadd9,
+    "bgMain": #caeffede,
+    "bgModal": #caeffe,
+    "white": #ffffff,
+    "black": #000000,
+);
+
+//.clase{
+//  background-color: map-get($map: $color, $key: "boton")
+//}
+    
+
+//---------------------PALETAS DE COLORES---------------------
+    //Agencia de viajes:
+        //Color: #183561;
+        //Color: #7EA8E6 ;
+        //Color: #387BE0 ;
+        //Color: #354761 ;
+        //Color: #2B5FAD ;
+        //Skyblue color: #4990EC ;
+
+    //Naturaleza:
+        //Color: #B8CEED ;
+        //Color: #2775A2 ;
+        //Color: #5F90BB ;
+        //Color: #8EBAE5 ;
+        //Color: #345D79 ;
+
+//Rutas imagenes
+$fondoHeader: url(../img/vuelos-.webp);
+
+

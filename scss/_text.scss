@@ -1,0 +1,104 @@
+/*☺ _text.scss*/
+
+//---------------------TIPOGRAFÍAS---------------------
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+    @import url("https://use.typekit.net/fgl2ufc.css");
+
+//Fonts
+    $mainFont: 'fira-sans', sans-serif;
+    $secondaryFont: 'raleway', sans-serif;
+
+
+
+//text sizing
+    $textXs: 0.5rem;
+    $textSm: 0.8rem;
+    $textMd: 1rem;
+    $textLg: 1.5rem;
+    $textXl: 2rem;
+    $textXXl: 2.5rem;
+
+
+//Font weight
+    $extraLight: 200;
+    $light: 300;
+    $regular: 400;
+    $bold: 600;
+    $extaBold: 800;
+
+
+
+//Font Weight
+    .fw-100{
+        font-weight: 100;
+        }
+    .fw-200{
+        font-weight: 200;
+        }
+    .fw-300{
+        font-weight: 300;
+        }
+    .fw-400{
+        font-weight: 400;
+        }
+    .fw-500{
+        font-weight: 500;
+        }
+    .fw-600{
+        font-weight: 600;
+        }
+    .fw-700{
+        font-weight: 700;
+        }
+    .fw-800{
+        font-weight: 800;
+        }
+    .fw-900{
+        font-weight: 900;
+    }
+
+.text-skyblue{
+    color: map-get($map: $color, $key: "principal")
+}
+
+@mixin texto($fuente, $tamano, $alineacion, $anchoTexto, $interlineado, $estilo){
+    font-family: $fuente;
+    font-size: $tamano;
+    text-align: $alineacion;
+    font-weight: $anchoTexto;
+    line-height: $interlineado;
+    font-style: $estilo;
+}
+
+.modal-title{
+    @include texto($mainFont, 2rem, center, $bold, 2.2rem, normal)
+}
+
+.descripcion-destino{
+    @include texto($secondaryFont, 1rem, justify, $light, 1.2rem, normal)
+}
+
+.precio-destino{
+    @include texto($secondaryFont, 1.3rem, center, $regular, 1.5rem, normal)
+}
+
+.titulo_hotel{
+    @include texto($mainFont, 2rem, left, $bold, 2.2rem, normal)
+}
+
+
+.desc_hotel, .ubi_hotel{
+    @include texto($mainFont, 1rem, justify, $light, 1.2rem, normal)
+}
+
+.tituloPrincipal{
+    @include texto($mainFont, 2.5rem, center, $regular, 2.7rem, normal)
+}
+
+.texto-form{
+    @include texto($mainFont, 1.5rem, center, $regular, 1.7rem, normal)
+}
+
+.descripcion-alojamiento{
+    @include texto($mainFont, 1rem, justify, $light, 1.2rem, normal)
+}

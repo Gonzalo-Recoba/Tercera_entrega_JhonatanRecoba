@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Los mejores precios en alquiler de autos están en Agentur.">
+    <meta name="author" content="Jhontan Gonzalo Recoba Tejera">
+    <meta name="keywords" content="Vuelos, viajes, alquiler de vehiculos, alquiler de autos, destinos turisticos, paquetes turisticos, alojamientos, hoteles">
+    <meta name="copyright" content="© Agentur 2025. Todos los derechos reservados. Todo el contenido de este sitio de es propiedad de Agentur S.A.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon1.svg" type="image/x-icon">
+    <title>Alquiler de autos - Agentur</title>
+</head>
+
+<body>
+<!--=====HEADER=====-->
+    <header id="mainNavigation">
+        <nav role="navigation">
+        <div class="pt-3 text-center">
+            <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="invert logo"></a>
+        </div>
+        </nav>
+        <div class="navbar-expand-md ">
+        <div class="navbar-dark text-center my-1 ">
+            <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <span class="align-center ff-rw fs-n fw-700">Menú</span>
+            </button>
+        </div>
+        <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto ">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/vuelos.html">Vuelos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/alojamientos.html">Alojamientos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/autos.html">Autos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+            </li>
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModallogin"><img src="../img/iconos/perfil.png" alt="perfil" class="perfil"></a>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <!--=====MAIN=====-->
+    <main class="caja_central p-3 main-autos">
+        <h1 class="tituloPrincipal">Alquiler de autos</h1>
+        <section class="py-3 g-3 section-autos">
+            <!--Formulario Filtro-->
+            <div class="wow animate__bounceIn form-autos">
+                <form class="row form-control filtros g-2 p-3">
+                    <h3 class="mx-auto texto-form">Buscar vehiculos:</h3>
+                    <div class="d-flex justify-content-evenly row g-3">
+                        <input type="checkbox" class="btn-check " name="option1" id="option1" autocomplete="off" checked>
+                        <label class="btn btn-skyblue col-sm-5 align-items-center m-2" for="option1">Retiro</label>
+                        <input type="checkbox" class="btn-check " name="option2" id="option2" autocomplete="off">
+                        <label class="btn btn-skyblue col-sm-5 align-items-center m-2" for="option2">Entrega</label>
+                    </div>
+                    <div class="row g-3 filtro-inferior">
+                        <div class="col-12">
+                            <label for="exampleDataList" class="form-label mx-auto">Lugar de retiro:</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Buscar por ubicación...">
+                            <datalist id="datalistOptions">
+                                <option value="Montevideo">
+                                <option value="Buenos Aires">
+                                <option value="Santiago de Chile">
+                                <option value="Rio de Janeiro">
+                                <option value="Cancún">
+                                <option value="Bariloche">
+                                <option value="Madrid">
+                                <option value="Punta Cana">
+                                <option value="Miami">
+                                <option value="Recife">
+                                <option value="Otra opción">
+                                <option value="Otra opción">
+                                <option value="Otra opción">
+                                <option value="Otra opción">
+                                <option value="Otra opción">
+                                <option value="Otra opción">
+                                <option value="Otra opción">
+                                <option value="Otra opción">
+                            </datalist>
+                        </div>
+                        <div class="col-12">
+                            <span class="text-center">Retiro:</span>
+                            <input type="datetime-local" class="form-control" aria-label="FechaDeSalida">
+                        </div>
+                        <div class="col-12">
+                            <span class="text-center">Devolución:</span>
+                            <input type="datetime-local" class="form-control" aria-label="FechaDeRegreso">
+                        </div>
+                        <div class="col-12 col-sm-4 col-lg-12">
+                            <span class="text-center">Edad:</span>
+                            <input type="number" class="form-control" aria-label="Cantidad de adultos">
+                        </div>
+                        <div class="col-12 col-sm-8 col-lg-12">
+                            <span class="text-center">Tipo de vehículo:</span>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Todos</option>
+                                <option value="1">Económico</option>
+                                <option value="2">Compacto</option>
+                                <option value="3">Sedán</option>
+                                <option value="4">SUV</option>
+                                <option value="5">Utilitarios</option>
+                            </select>
+                        </div>
+                        <div class="col-12 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Devolver el vehículo en una oficina distinta</label>
+                        </div>
+                        <div class="col-12form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <label class="form-check-label" for="exampleCheck1">Inluir silla para bebés y niños?</label>
+                        </div>
+                        <div class="col-8 d-flex mx-auto">
+                            <button class="btn btn-skyblue w-100">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--Vehículo 1-->
+            <article class="wow vehiculo auto1 animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Peugeot 301</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 2-->
+            <article class="wow auto2 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyundai I5</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 3-->
+            <article class="wow auto3 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Onix</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 4-->
+            <article class="wow auto4 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nissan March</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 5-->
+            <article class="wow auto5 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fiat Palio</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 6-->
+            <article class="wow auto6 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Up</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 7-->
+            <article class="wow auto7 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Spin</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 8-->
+            <article class="wow auto8 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Prisma</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 9-->
+            <article class="wow auto9 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Yaris</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+            <!--Vehículo 10-->
+            <article class="wow auto10 vehiculo animate__zoomIn">
+                <div>
+                    <img src="../img/vehículos/10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Renault Clio</h5>
+                        <p class="card-text descripcion-vehiculo">Este vehículo cuenta con 5 plazas, caja manual de 6 velocidades, kilometraje ilimitado.</p>
+                        <p class="card-text muted"><small class="text-muted">Cancelación gratuita</small></p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+<!--=====COMIENZA FOOTER=====-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="redes-sociales col-sm-12 col-md-4 mt-2">
+                    <a href="https://twitter.com/" target="_blank"><img src="../img/iconos/twitter.png" alt="icono Twitter" ></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/iconos/instagram.png" alt="icono Instragram" ></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/iconos/facebook.png" alt="icono Facebook" ></a>
+                </div>
+                <div class="copy col-sm-12 col-md-4 mt-2">
+                    <h6 class="ff-rw fw-200 fs-n">© 2025. Todos los derechos reservados.</h6>
+                </div>
+        
+                <div class="pie-contacto col-sm-12 col-md-4 mt-2">
+                    <a href="https://goo.gl/maps/gePNVgzgK8NoPjXs8" target="_blank"><img src="../img/iconos/ubicacion.png" alt="icono ubicacion" ></a>
+                    <a href="https://api.whatsapp.com/send?phone=59897959728&text=Hola Mundo!%21&source=&data=&app_absent=" target="_blank"><img src="../img/iconos/telefono.png" alt="icono telefono" ></a>
+                    <a href="mailto:gonzalo.recoba@gmail.com" target="_blank"><img src="../img/iconos/e-mail.png" alt="icono email" ></a>
+                </div>
+        
+            </div>
+        </div>
+    </footer>
+    
+    <!--Modal login-->
+    <div class="modal fade" id="exampleModallogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-login modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                <div class="gy-3">
+                    <div class="d-flex justify-content-center mt-3">
+                    <h3>Iniciar sesión</h3>
+                    </div>
+    
+                    <!--Campo email-->
+                    <div class="mb-3 form-floating d-flex justify-content-center">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="usuario@dominio.com">
+                    <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                    </div>
+    
+                    <!--campo contraseña-->
+                    <div class="mb-3 form-floating d-flex justify-content-center">
+                    <input type="password" class="form-control" id="floatingInput" placeholder="************">
+                    <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                    </div>
+    
+                    <!--iniciar sesión-->
+                    <div class="d-flex justify-content-center">
+                    <button class="btn btn-skyblue">Iniciar sesión</button>
+                    </div>
+    
+                    <!--forget password-->
+                    <div class="d-flex justify-content-center">
+                    <button class="btn btn-link ff-rw fw-200 fs-n">¿Olvidó su contraseña?</button>
+                    </div>
+    
+                    <!--iniciar sesión con...-->
+                    <div class="d-flex justify-content-center mt-3">
+                    <h6 class="ff-rw fw-200 fs-n">Iniciar sesión con:</h6>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://es-la.facebook.com/"><img src="../img/iconos/login_facebook.png" alt="Iniciar sesión con Facebook" class="w-3 mx-3"></a>
+                        <a href="https://accounts.google.com/"><img src="../img/iconos/login_google.png" alt="Iniciar sesión con Google" class="w-3 mx-3"></a>
+                        <a href="https://www.icloud.com/"><img src="../img/iconos/login_apple.png" alt="Iniciar sesión con Icloud" class="w-3 mx-3"></a>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                    <h6 class="text-center ff-rw fw-200 fs-n">No soy usuario registrado y quiero crear una cuenta</h6>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                    <button class="btn btn-skyblue">Registrarse</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div> 
+    
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+</body>
+</html>

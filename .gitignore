@@ -1,0 +1,5 @@
+/node_modules/
+/ideas/
+steps.txt
+package-lock.json
+package.json
